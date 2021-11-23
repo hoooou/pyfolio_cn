@@ -29,6 +29,7 @@ from .interesting_periods import PERIODS
 from .txn import get_turnover
 from .utils import APPROX_BDAYS_PER_MONTH, APPROX_BDAYS_PER_YEAR
 from .utils import DAILY
+from . import _
 
 DEPRECATION_WARNING = ("Risk functions in pyfolio.timeseries are deprecated "
                        "and will be removed in a future release. Please "
@@ -431,7 +432,7 @@ def common_sense_ratio(returns):
     """
 
     return ep.tail_ratio(returns) * \
-        (1 + ep.annual_return(returns))
+           (1 + ep.annual_return(returns))
 
 
 def normalize(returns, starting_value=1):
@@ -670,22 +671,22 @@ FACTOR_STAT_FUNCS = [
 ]
 
 STAT_FUNC_NAMES = {
-    'annual_return': 'Annual return',
-    'cum_returns_final': 'Cumulative returns',
-    'annual_volatility': 'Annual volatility',
-    'sharpe_ratio': 'Sharpe ratio',
-    'calmar_ratio': 'Calmar ratio',
-    'stability_of_timeseries': 'Stability',
-    'max_drawdown': 'Max drawdown',
-    'omega_ratio': 'Omega ratio',
-    'sortino_ratio': 'Sortino ratio',
-    'skew': 'Skew',
-    'kurtosis': 'Kurtosis',
-    'tail_ratio': 'Tail ratio',
-    'common_sense_ratio': 'Common sense ratio',
-    'value_at_risk': 'Daily value at risk',
-    'alpha': 'Alpha',
-    'beta': 'Beta',
+    'annual_return': _('Annual return'),
+    'cum_returns_final': _('Cumulative returns'),
+    'annual_volatility': _('Annual volatility'),
+    'sharpe_ratio': _('Sharpe ratio'),
+    'calmar_ratio': _('Calmar ratio'),
+    'stability_of_timeseries': _('Stability'),
+    'max_drawdown': _('Max drawdown'),
+    'omega_ratio': _('Omega ratio'),
+    'sortino_ratio': _('Sortino ratio'),
+    'skew': _('Skew'),
+    'kurtosis': _('Kurtosis'),
+    'tail_ratio': _('Tail ratio'),
+    'common_sense_ratio': _('Common sense ratio'),
+    'value_at_risk': _('Daily value at risk'),
+    'alpha': _('Alpha'),
+    'beta': _('Beta'),
 }
 
 
@@ -1015,7 +1016,8 @@ def gen_drawdown_table(returns, top=10):
             df_drawdowns.loc[i, 'Recovery date'] = (recovery.to_pydatetime()
                                                     .strftime('%Y-%m-%d'))
         df_drawdowns.loc[i, 'Net drawdown in %'] = (
-            (df_cum.loc[peak] - df_cum.loc[valley]) / df_cum.loc[peak]) * 100
+                                                           (df_cum.loc[peak] - df_cum.loc[valley]) / df_cum.loc[
+                                                       peak]) * 100
 
     df_drawdowns['Peak date'] = pd.to_datetime(df_drawdowns['Peak date'])
     df_drawdowns['Valley date'] = pd.to_datetime(df_drawdowns['Valley date'])
@@ -1044,7 +1046,7 @@ def rolling_volatility(returns, rolling_vol_window):
     """
 
     return returns.rolling(rolling_vol_window).std() \
-        * np.sqrt(APPROX_BDAYS_PER_YEAR)
+           * np.sqrt(APPROX_BDAYS_PER_YEAR)
 
 
 def rolling_sharpe(returns, rolling_sharpe_window):
@@ -1070,8 +1072,8 @@ def rolling_sharpe(returns, rolling_sharpe_window):
     """
 
     return returns.rolling(rolling_sharpe_window).mean() \
-        / returns.rolling(rolling_sharpe_window).std() \
-        * np.sqrt(APPROX_BDAYS_PER_YEAR)
+           / returns.rolling(rolling_sharpe_window).std() \
+           * np.sqrt(APPROX_BDAYS_PER_YEAR)
 
 
 def simulate_paths(is_returns, num_days,

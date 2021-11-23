@@ -1,0 +1,462 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-24 02:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pyfolio\timeseries.py:674 pyfolio\plotting.py:530
+msgid "Annual return"
+msgstr "年度收益"
+
+#: pyfolio\timeseries.py:675 pyfolio\plotting.py:449 pyfolio\plotting.py:531
+#: pyfolio\plotting.py:777 pyfolio\plotting.py:1948 pyfolio\tears.py:354
+#: pyfolio\tears.py:527
+msgid "Cumulative returns"
+msgstr "累计收益"
+
+#: pyfolio\timeseries.py:676 pyfolio\plotting.py:532
+msgid "Annual volatility"
+msgstr "年度波动率"
+
+#: pyfolio\timeseries.py:677 pyfolio\plotting.py:1014 pyfolio\plotting.py:1517
+msgid "Sharpe ratio"
+msgstr "夏普比率"
+
+#: pyfolio\timeseries.py:678
+msgid "Calmar ratio"
+msgstr "卡玛比率(夏普比率的改进)"
+
+#: pyfolio\timeseries.py:679
+msgid "Stability"
+msgstr "稳定性"
+
+#: pyfolio\timeseries.py:680 pyfolio\plotting.py:533
+msgid "Max drawdown"
+msgstr "最大回撤"
+
+#: pyfolio\timeseries.py:681
+msgid "Omega ratio"
+msgstr "Omega比率"
+
+#: pyfolio\timeseries.py:682
+msgid "Sortino ratio"
+msgstr "索提诺比率"
+
+#: pyfolio\timeseries.py:683
+msgid "Skew"
+msgstr "Skew"
+
+#: pyfolio\timeseries.py:684
+msgid "Kurtosis"
+msgstr "峰态系数"
+
+#: pyfolio\timeseries.py:685
+msgid "Tail ratio"
+msgstr "尾部比率"
+
+#: pyfolio\timeseries.py:686
+msgid "Common sense ratio"
+msgstr "常识性比率"
+
+#: pyfolio\timeseries.py:687 pyfolio\plotting.py:534
+msgid "Daily value at risk"
+msgstr "日在险价值"
+
+#: pyfolio\timeseries.py:688
+msgid "Alpha"
+msgstr "阿尔法系数"
+
+#: pyfolio\timeseries.py:689 pyfolio\plotting.py:873
+msgid "Beta"
+msgstr "贝塔系数"
+
+#: pyfolio\plotting.py:230
+msgid "Annual returns"
+msgstr "年度收益"
+
+#: pyfolio\plotting.py:280
+msgid "Number of months"
+msgstr "月数"
+
+#: pyfolio\plotting.py:281 pyfolio\plotting.py:697 pyfolio\tears.py:556
+#: pyfolio\tears.py:946 pyfolio\perf_attrib.py:382
+msgid "Returns"
+msgstr "收益"
+
+#: pyfolio\plotting.py:282
+msgid "Distribution of monthly returns"
+msgstr "每月收益分布"
+
+#: pyfolio\plotting.py:340
+msgid "Total holdings"
+msgstr "总持有量"
+
+#: pyfolio\plotting.py:341 pyfolio\plotting.py:398
+msgid "Holdings"
+msgstr "持有"
+
+#: pyfolio\plotting.py:397
+msgid "Long and short holdings"
+msgstr "多头和空头持有"
+
+#: pyfolio\plotting.py:448
+#, python-format
+msgid "Top %i drawdown periods"
+msgstr "前 %i 个回撤期 "
+
+#: pyfolio\plotting.py:487
+msgid "Drawdown"
+msgstr "回撤"
+
+#: pyfolio\plotting.py:488
+msgid "Underwater plot"
+msgstr "水下图"
+
+#: pyfolio\plotting.py:535 pyfolio\plotting.py:1381 pyfolio\plotting.py:1385
+msgid "Daily turnover"
+msgstr "日换手率"
+
+#: pyfolio\plotting.py:595
+msgid "Start date"
+msgstr "开始日期"
+
+#: pyfolio\plotting.py:596
+msgid "End date"
+msgstr "结束日期"
+
+#: pyfolio\plotting.py:631
+msgid "In-sample months"
+msgstr "抽样月份"
+
+#: pyfolio\plotting.py:633
+msgid "Out-of-sample months"
+msgstr "样本外月份"
+
+#: pyfolio\plotting.py:637
+msgid "In-sample"
+msgstr "抽样"
+
+#: pyfolio\plotting.py:638
+msgid "Out-of-sample"
+msgstr "样本外"
+
+#: pyfolio\plotting.py:639
+msgid "All"
+msgstr "所有"
+
+#: pyfolio\plotting.py:643
+msgid "Total months"
+msgstr "所有月份"
+
+#: pyfolio\plotting.py:808
+msgid "Backtest"
+msgstr "回测"
+
+#: pyfolio\plotting.py:812
+msgid "Live"
+msgstr "Live"
+
+#: pyfolio\plotting.py:872
+msgid "Rolling portfolio beta to "
+msgstr "滚动投资组合 beta 到 "
+
+#: pyfolio\plotting.py:884
+msgid "6-mo"
+msgstr "6-月"
+
+#: pyfolio\plotting.py:885
+msgid "12-mo"
+msgstr "12-月"
+
+#: pyfolio\plotting.py:938
+msgid "Rolling volatility (6-month)"
+msgstr "滚动波动率（6 个月）"
+
+#: pyfolio\plotting.py:947 pyfolio\plotting.py:950 pyfolio\plotting.py:953
+msgid "Volatility"
+msgstr "波动率"
+
+#: pyfolio\plotting.py:950 pyfolio\plotting.py:953
+msgid "Average volatility"
+msgstr "平均波动率"
+
+#: pyfolio\plotting.py:953
+msgid "Benchmark volatility"
+msgstr "基准波动率"
+
+#: pyfolio\plotting.py:1006
+msgid "Rolling Sharpe ratio (6-month)"
+msgstr "滚动夏普比率（6 个月）"
+
+#: pyfolio\plotting.py:1017 pyfolio\plotting.py:1020
+msgid "Sharpe"
+msgstr "夏普"
+
+#: pyfolio\plotting.py:1017 pyfolio\plotting.py:1020
+msgid "Average"
+msgstr "平均"
+
+#: pyfolio\plotting.py:1020
+msgid "Benchmark Sharpe"
+msgstr "基准夏普"
+
+#: pyfolio\plotting.py:1059 pyfolio\plotting.py:1060
+msgid "Gross leverage"
+msgstr "总杠杆"
+
+#: pyfolio\plotting.py:1099
+msgid "Long"
+msgstr "多头"
+
+#: pyfolio\plotting.py:1103
+msgid "Short"
+msgstr "空头"
+
+#: pyfolio\plotting.py:1105
+msgid "Net"
+msgstr "净"
+
+#: pyfolio\plotting.py:1108 pyfolio\plotting.py:1109 pyfolio\plotting.py:1224
+msgid "Exposure"
+msgstr "暴露"
+
+#: pyfolio\plotting.py:1158
+msgid "Top 10 long positions of all time"
+msgstr "历史上排名前 10 位的多头头寸 "
+
+#: pyfolio\plotting.py:1162
+msgid "Top 10 short positions of all time"
+msgstr "历史上排名前 10 的空头头寸 "
+
+#: pyfolio\plotting.py:1166
+msgid "Top 10 positions of all time"
+msgstr "历史上排名前 10 的仓位"
+
+#: pyfolio\plotting.py:1174
+msgid "Portfolio allocation over time, only top 10 holdings"
+msgstr "一段时间内的投资组合配置，仅前10大持股"
+
+#: pyfolio\plotting.py:1190
+msgid "Exposure by holding"
+msgstr "持有风险"
+
+#: pyfolio\plotting.py:1225
+msgid "Long/short max and median position concentration"
+msgstr "多/空最大及中位数持仓集中度"
+
+#: pyfolio\plotting.py:1255
+msgid "Sector allocation over time"
+msgstr "所有的行业分配"
+
+#: pyfolio\plotting.py:1267
+msgid "Exposure by sector"
+msgstr "按行业划分的风险敞口"
+
+#: pyfolio\plotting.py:1317
+msgid "Out-of-sample data"
+msgstr "样本外数据"
+
+#: pyfolio\plotting.py:1320
+msgid "Daily"
+msgstr "日度"
+
+#: pyfolio\plotting.py:1320
+msgid "Weekly"
+msgstr "周度"
+
+#: pyfolio\plotting.py:1320
+msgid "Monthly"
+msgstr "月度"
+
+#: pyfolio\plotting.py:1321
+msgid "Return quantiles"
+msgstr "收益率分位数"
+
+#: pyfolio\plotting.py:1382
+msgid "Average daily turnover, by month"
+msgstr "每日平均换手率,按月"
+
+#: pyfolio\plotting.py:1383
+msgid "Average daily turnover, net"
+msgstr "每日平均净换手率"
+
+#: pyfolio\plotting.py:1388
+msgid "Turnover"
+msgstr "换手率"
+
+#: pyfolio\plotting.py:1436
+msgid "Cumulative returns given additional per-dollar slippage"
+msgstr ""
+
+#: pyfolio\plotting.py:1483
+msgid "Average annual returns given additional per-dollar slippage"
+msgstr "Average annual returns given additional per-dollar slippage"
+
+#: pyfolio\plotting.py:1485
+msgid "Average annual return"
+msgstr "平均年度收益率"
+
+#: pyfolio\plotting.py:1486
+msgid "Per-dollar slippage (bps)"
+msgstr "美元贬值（BPS）"
+
+#: pyfolio\plotting.py:1516
+msgid "Capital base ($mm)"
+msgstr "资本基础（百万美元）"
+
+#: pyfolio\plotting.py:1518
+msgid "Capital base performance sweep"
+msgstr "Capital base performance sweep"
+
+#: pyfolio\plotting.py:1554
+msgid "Distribution of daily turnover rates"
+msgstr "每日换手率的分布"
+
+#: pyfolio\plotting.py:1555
+msgid "Turnover rate"
+msgstr "换手率"
+
+#: pyfolio\plotting.py:1590
+msgid "Daily trading volume"
+msgstr "每日交易量"
+
+#: pyfolio\plotting.py:1592
+msgid "Amount of shares traded"
+msgstr "股票交易量"
+
+#: pyfolio\plotting.py:1649
+msgid "Transaction time distribution"
+msgstr "交易时间分布"
+
+#: pyfolio\plotting.py:1650
+msgid "Proportion"
+msgstr "比例"
+
+#: pyfolio\plotting.py:1674
+msgid "Worst drawdown periods"
+msgstr "最严重回撤时期"
+
+#: pyfolio\plotting.py:1815
+msgid "Profitability (PnL / PnL total) per name"
+msgstr "Profitability (PnL / PnL total) per name"
+
+#: pyfolio\plotting.py:1859
+msgid "Probability of making a profitable decision"
+msgstr "盈利概率"
+
+#: pyfolio\plotting.py:1860
+msgid "Belief"
+msgstr "Belief"
+
+#: pyfolio\tears.py:538
+msgid "Cumulative returns volatility matched to benchmark"
+msgstr "与基准匹配的累积收益波动率"
+
+#: pyfolio\tears.py:548
+msgid "Cumulative returns on logarithmic scale"
+msgstr "累计收益的对数"
+
+#: pyfolio\tears.py:853
+msgid "Holding time in days"
+msgstr "持仓天数"
+
+#: pyfolio\tears.py:856
+msgid "PnL per round-trip trade in $"
+msgstr "PnL per round-trip trade in $"
+
+#: pyfolio\tears.py:861
+msgid "Round-trip returns in %"
+msgstr "往返收益 in %"
+
+#: pyfolio\tears.py:913
+msgid "Stress Events"
+msgstr "应激事件"
+
+#: pyfolio\tears.py:1155
+msgid "Cumulative common {} returns attribution"
+msgstr "累计共同{}收益归因"
+
+#: pyfolio\tears.py:1169
+msgid "Daily {} factor exposures"
+msgstr "每日 {} 因子暴露"
+
+#: pyfolio\perf_attrib.py:311
+msgid "Summary Statistics"
+msgstr "摘要统计"
+
+#: pyfolio\perf_attrib.py:315
+msgid "Exposures Summary"
+msgstr "暴露总结"
+
+#: pyfolio\perf_attrib.py:319
+msgid "Average Risk Factor Exposure"
+msgstr "平均风险因素敞口"
+
+#: pyfolio\perf_attrib.py:320
+msgid "Annualized Return"
+msgstr "年化收益率"
+
+#: pyfolio\perf_attrib.py:321
+msgid "Cumulative Return"
+msgstr "累计收益率"
+
+#: pyfolio\perf_attrib.py:358
+msgid "Total returns"
+msgstr "总收益率"
+
+#: pyfolio\perf_attrib.py:365
+msgid " (adjusted)"
+msgstr " (调整)"
+
+#: pyfolio\perf_attrib.py:373
+msgid "Cumulative specific returns"
+msgstr "累积特定回报 "
+
+#: pyfolio\perf_attrib.py:375
+msgid "Cumulative common returns"
+msgstr "累计共同收益"
+
+#: pyfolio\perf_attrib.py:379
+msgid "Cumulative cost spent"
+msgstr "累计花费成本"
+
+#: pyfolio\perf_attrib.py:381
+msgid "Time series of cumulative returns"
+msgstr "累计收益时间序列"
+
+#: pyfolio\perf_attrib.py:408
+msgid "Multi-factor alpha"
+msgstr "多因子alpha"
+
+#: pyfolio\perf_attrib.py:409
+msgid "Histogram of alphas"
+msgstr "alphas直方图"
+
+#: pyfolio\perf_attrib.py:422
+msgid "Cumulative common returns attribution"
+msgstr ""
+
+#: pyfolio\perf_attrib.py:466
+msgid "Cumulative returns by factor"
+msgstr "累计收益按因子"
+
+#: pyfolio\perf_attrib.py:473
+msgid "Daily risk factor exposures"
+msgstr "日风险敞口"
+
+#: pyfolio\perf_attrib.py:499
+msgid "Factor exposures"
+msgstr "风险敞口"

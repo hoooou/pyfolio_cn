@@ -14,7 +14,7 @@
 # limitations under the License.
 
 from __future__ import division
-
+import gettext
 import warnings
 
 from itertools import cycle
@@ -76,7 +76,6 @@ def percentage(x, pos):
     """
 
     return '%.0f%%' % x
-
 
 def format_asset(asset):
     """

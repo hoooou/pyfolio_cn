@@ -351,7 +351,7 @@ def create_simple_tear_sheet(returns,
                                   live_start_date=live_start_date,
                                   cone_std=(1.0, 1.5, 2.0),
                                   ax=ax_rolling_returns)
-    ax_rolling_returns.set_title('Cumulative returns')
+    ax_rolling_returns.set_title(_('Cumulative returns'))
 
     if benchmark_rets is not None:
         plotting.plot_rolling_beta(returns, benchmark_rets, ax=ax_rolling_beta)
@@ -524,7 +524,7 @@ def create_returns_tear_sheet(returns, positions=None,
         cone_std=cone_std,
         ax=ax_rolling_returns)
     ax_rolling_returns.set_title(
-        'Cumulative returns')
+        _('Cumulative returns'))
 
     plotting.plot_rolling_returns(
         returns,
@@ -535,7 +535,7 @@ def create_returns_tear_sheet(returns, positions=None,
         legend_loc=None,
         ax=ax_rolling_returns_vol_match)
     ax_rolling_returns_vol_match.set_title(
-        'Cumulative returns volatility matched to benchmark')
+        _('Cumulative returns volatility matched to benchmark'))
 
     plotting.plot_rolling_returns(
         returns,
@@ -545,7 +545,7 @@ def create_returns_tear_sheet(returns, positions=None,
         cone_std=cone_std,
         ax=ax_rolling_returns_log)
     ax_rolling_returns_log.set_title(
-        'Cumulative returns on logarithmic scale')
+        _('Cumulative returns on logarithmic scale'))
 
     plotting.plot_returns(
         returns,
@@ -553,7 +553,7 @@ def create_returns_tear_sheet(returns, positions=None,
         ax=ax_returns,
     )
     ax_returns.set_title(
-        'Returns')
+        _('Returns'))
 
     if benchmark_rets is not None:
         plotting.plot_rolling_beta(
@@ -850,15 +850,15 @@ def create_round_trip_tear_sheet(returns, positions, transactions,
 
     trade_holding_times = [x.days for x in trades['duration']]
     sns.distplot(trade_holding_times, kde=False, ax=ax_holding_time)
-    ax_holding_time.set(xlabel='Holding time in days')
+    ax_holding_time.set(xlabel=_('Holding time in days'))
 
     sns.distplot(trades.pnl, kde=False, ax=ax_pnl_per_round_trip_dollars)
-    ax_pnl_per_round_trip_dollars.set(xlabel='PnL per round-trip trade in $')
+    ax_pnl_per_round_trip_dollars.set(xlabel=_('PnL per round-trip trade in $'))
 
     sns.distplot(trades.returns.dropna() * 100, kde=False,
                  ax=ax_pnl_per_round_trip_pct)
     ax_pnl_per_round_trip_pct.set(
-        xlabel='Round-trip returns in %')
+        xlabel=_('Round-trip returns in %'))
 
     gs.tight_layout(fig)
 
@@ -910,7 +910,7 @@ def create_interesting_times_tear_sheet(returns, benchmark_rets=None,
     utils.print_table(pd.DataFrame(rets_interesting)
                       .describe().transpose()
                       .loc[:, ['mean', 'min', 'max']] * 100,
-                      name='Stress Events',
+                      name=_('Stress Events'),
                       float_format='{0:.2f}%'.format)
 
     if benchmark_rets is not None:
@@ -943,7 +943,7 @@ def create_interesting_times_tear_sheet(returns, benchmark_rets=None,
                       loc=legend_loc, frameon=True, framealpha=0.5)
 
         ax.set_title(name)
-        ax.set_ylabel('Returns')
+        ax.set_ylabel(_('Returns'))
         ax.set_xlabel('')
 
     if return_fig:
@@ -1152,7 +1152,7 @@ def create_perf_attrib_tear_sheet(returns,
                 perf_attrib_data[columns_to_select],
                 ax=plt.subplot(gs[current_section]),
                 title=(
-                    'Cumulative common {} returns attribution'
+                    _('Cumulative common {} returns attribution')
                 ).format(factor_type)
             )
             current_section += 1
@@ -1166,7 +1166,7 @@ def create_perf_attrib_tear_sheet(returns,
             perf_attrib.plot_risk_exposures(
                 portfolio_exposures[columns_to_select],
                 ax=plt.subplot(gs[current_section]),
-                title='Daily {} factor exposures'.format(factor_type)
+                title=_('Daily {} factor exposures').format(factor_type)
             )
             current_section += 1
 

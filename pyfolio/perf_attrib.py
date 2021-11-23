@@ -308,17 +308,17 @@ def show_perf_attrib_stats(returns,
         summary_stats['Specific Sharpe Ratio']
     )
 
-    print_table(summary_stats, name='Summary Statistics')
+    print_table(summary_stats, name=_('Summary Statistics'))
 
     print_table(
         risk_exposure_stats,
-        name='Exposures Summary',
+        name=_('Exposures Summary'),
         # In exposures table, format exposure column to 2 decimal places, and
         # return columns  as percentages.
         formatters={
-            'Average Risk Factor Exposure': float_formatter,
-            'Annualized Return': percentage_formatter,
-            'Cumulative Return': percentage_formatter,
+            _('Average Risk Factor Exposure'): float_formatter,
+            _('Annualized Return'): percentage_formatter,
+            _('Cumulative Return'): percentage_formatter,
         },
     )
 
@@ -355,14 +355,14 @@ def plot_returns(perf_attrib_data, cost=None, ax=None):
         ax = plt.gca()
 
     returns = perf_attrib_data['total_returns']
-    total_returns_label = 'Total returns'
+    total_returns_label = _('Total returns')
 
     cumulative_returns_less_costs = _cumulative_returns_less_costs(
         returns,
         cost
     )
     if cost is not None:
-        total_returns_label += ' (adjusted)'
+        total_returns_label += _(' (adjusted)')
 
     specific_returns = perf_attrib_data['specific_returns']
     common_returns = perf_attrib_data['common_returns']
@@ -370,16 +370,16 @@ def plot_returns(perf_attrib_data, cost=None, ax=None):
     ax.plot(cumulative_returns_less_costs, color='b',
             label=total_returns_label)
     ax.plot(ep.cum_returns(specific_returns), color='g',
-            label='Cumulative specific returns')
+            label=_('Cumulative specific returns'))
     ax.plot(ep.cum_returns(common_returns), color='r',
-            label='Cumulative common returns')
+            label=_('Cumulative common returns'))
 
     if cost is not None:
         ax.plot(-ep.cum_returns(cost), color='k',
-                label='Cumulative cost spent')
+                label=_('Cumulative cost spent'))
 
-    ax.set_title('Time series of cumulative returns')
-    ax.set_ylabel('Returns')
+    ax.set_title(_('Time series of cumulative returns'))
+    ax.set_ylabel(_('Returns'))
 
     configure_legend(ax)
 
@@ -405,8 +405,8 @@ def plot_alpha_returns(alpha_returns, ax=None):
     if ax is None:
         ax = plt.gca()
 
-    ax.hist(alpha_returns, color='g', label='Multi-factor alpha')
-    ax.set_title('Histogram of alphas')
+    ax.hist(alpha_returns, color='g', label=_('Multi-factor alpha'))
+    ax.set_title(_('Histogram of alphas'))
     ax.axvline(0, color='k', linestyle='--', label='Zero')
 
     avg = alpha_returns.mean()
@@ -419,7 +419,7 @@ def plot_alpha_returns(alpha_returns, ax=None):
 def plot_factor_contribution_to_perf(
         perf_attrib_data,
         ax=None,
-        title='Cumulative common returns attribution',
+        title=_('Cumulative common returns attribution'),
 ):
     """
     Plot each factor's contribution to performance.
@@ -463,14 +463,14 @@ def plot_factor_contribution_to_perf(
     ax.axhline(0, color='k')
     configure_legend(ax, change_colors=True)
 
-    ax.set_ylabel('Cumulative returns by factor')
+    ax.set_ylabel(_('Cumulative returns by factor'))
     ax.set_title(title)
 
     return ax
 
 
 def plot_risk_exposures(exposures, ax=None,
-                        title='Daily risk factor exposures'):
+                        title=_('Daily risk factor exposures')):
     """
     Parameters
     ----------
@@ -496,7 +496,7 @@ def plot_risk_exposures(exposures, ax=None,
         ax.plot(exposures[col])
 
     configure_legend(ax, change_colors=True)
-    ax.set_ylabel('Factor exposures')
+    ax.set_ylabel(_('Factor exposures'))
     ax.set_title(title)
 
     return ax

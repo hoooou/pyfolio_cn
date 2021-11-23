@@ -1,4 +1,5 @@
 from . import utils
+from . import languagesUtils
 from . import timeseries
 from . import pos
 from . import txn
@@ -10,7 +11,7 @@ from . import perf_attrib
 from .tears import *  # noqa
 from .plotting import *  # noqa
 from ._version import get_versions
-
+_=languagesUtils.auto_install()
 __version__ = get_versions()['version']
 del get_versions
 
