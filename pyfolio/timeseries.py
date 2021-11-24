@@ -995,10 +995,10 @@ def gen_drawdown_table(returns, top=10):
     df_cum = ep.cum_returns(returns, 1.0)
     drawdown_periods = get_top_drawdowns(returns, top=top)
     df_drawdowns = pd.DataFrame(index=list(range(top)),
-                                columns=['Net drawdown in %',
-                                         'Peak date',
-                                         'Valley date',
-                                         'Recovery date',
+                                columns=[_('Net drawdown in %'),
+                                         _('Peak date'),
+                                         _('Valley date'),
+                                         _('Recovery date'),
                                          'Duration'])
 
     for i, (peak, valley, recovery) in enumerate(drawdown_periods):
@@ -1008,23 +1008,23 @@ def gen_drawdown_table(returns, top=10):
             df_drawdowns.loc[i, 'Duration'] = len(pd.date_range(peak,
                                                                 recovery,
                                                                 freq='B'))
-        df_drawdowns.loc[i, 'Peak date'] = (peak.to_pydatetime()
+        df_drawdowns.loc[i, _('Peak date')] = (peak.to_pydatetime()
                                             .strftime('%Y-%m-%d'))
-        df_drawdowns.loc[i, 'Valley date'] = (valley.to_pydatetime()
+        df_drawdowns.loc[i, _('Valley date')] = (valley.to_pydatetime()
                                               .strftime('%Y-%m-%d'))
         if isinstance(recovery, float):
-            df_drawdowns.loc[i, 'Recovery date'] = recovery
+            df_drawdowns.loc[i, _('Recovery date')] = recovery
         else:
-            df_drawdowns.loc[i, 'Recovery date'] = (recovery.to_pydatetime()
+            df_drawdowns.loc[i, _('Recovery date')] = (recovery.to_pydatetime()
                                                     .strftime('%Y-%m-%d'))
-        df_drawdowns.loc[i, 'Net drawdown in %'] = (
+        df_drawdowns.loc[i, _('Net drawdown in %')] = (
                                                            (df_cum.loc[peak] - df_cum.loc[valley]) / df_cum.loc[
                                                        peak]) * 100
 
-    df_drawdowns['Peak date'] = pd.to_datetime(df_drawdowns['Peak date'])
-    df_drawdowns['Valley date'] = pd.to_datetime(df_drawdowns['Valley date'])
-    df_drawdowns['Recovery date'] = pd.to_datetime(
-        df_drawdowns['Recovery date'])
+    df_drawdowns[_('Peak date')] = pd.to_datetime(df_drawdowns[_('Peak date')])
+    df_drawdowns[_('Valley date')] = pd.to_datetime(df_drawdowns[_('Valley date')])
+    df_drawdowns[_('Recovery date')] = pd.to_datetime(
+        df_drawdowns[_('Recovery date')])
 
     return df_drawdowns
 

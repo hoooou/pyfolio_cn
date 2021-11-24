@@ -178,9 +178,9 @@ def plot_monthly_returns_heatmap(returns, ax=None, **kwargs):
         cbar=False,
         cmap=matplotlib.cm.RdYlGn,
         ax=ax, **kwargs)
-    ax.set_ylabel('Year')
-    ax.set_xlabel('Month')
-    ax.set_title("Monthly returns (%)")
+    ax.set_ylabel(_('Year'))
+    ax.set_xlabel(_('Month'))
+    ax.set_title(_("Monthly returns (%)"))
     return ax
 
 
@@ -438,7 +438,7 @@ def plot_drawdown_periods(returns, top=10, ax=None, **kwargs):
     lim = ax.get_ylim()
     colors = sns.cubehelix_palette(len(df_drawdowns))[::-1]
     for i, (peak, recovery) in df_drawdowns[
-            ['Peak date', 'Recovery date']].iterrows():
+            [_('Peak date'), _('Recovery date')]].iterrows():
         if pd.isnull(recovery):
             recovery = returns.index[-1]
         ax.fill_between((peak, recovery),

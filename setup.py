@@ -72,7 +72,7 @@ if __name__ == "__main__":
         url=URL,
         long_description=LONG_DESCRIPTION,
         packages=['pyfolio', 'pyfolio.tests'],
-        package_data={'pyfolio': ['data/*.*']},
+        package_data={'pyfolio': ['data/*.*','data/locale/zh_CN/LC_MESSAGES/*.*']},
         classifiers=classifiers,
         install_requires=install_reqs,
         extras_require=extras_reqs,

@@ -379,7 +379,7 @@ msgstr "PnL per round-trip trade in $"
 
 #: pyfolio\tears.py:861
 msgid "Round-trip returns in %"
-msgstr "往返收益 in %"
+msgstr "Round-trip returns in %"
 
 #: pyfolio\tears.py:913
 msgid "Stress Events"
@@ -387,11 +387,11 @@ msgstr "应激事件"
 
 #: pyfolio\tears.py:1155
 msgid "Cumulative common {} returns attribution"
-msgstr "累计共同{}收益归因"
+msgstr "Cumulative common {} returns attribution"
 
 #: pyfolio\tears.py:1169
 msgid "Daily {} factor exposures"
-msgstr "每日 {} 因子暴露"
+msgstr "Daily {} factor exposures"
 
 #: pyfolio\perf_attrib.py:311
 msgid "Summary Statistics"
@@ -460,3 +460,21 @@ msgstr "日风险敞口"
 #: pyfolio\perf_attrib.py:499
 msgid "Factor exposures"
 msgstr "风险敞口"
+
+msgid "Year"
+msgstr "年"
+
+msgid "Month"
+msgstr "月"
+
+msgid "Monthly returns (%)"
+msgstr "月度收益率"
+
+
+
+msgid "Peak date"
+msgstr "高峰日期"
+msgid "Valley date"
+msgstr "底部日期"
+msgid "Recovery date"
+msgstr "反弹日期"
