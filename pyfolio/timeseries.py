@@ -24,12 +24,14 @@ import scipy as sp
 import scipy.stats as stats
 from sklearn import linear_model
 
+from . import languagesUtils
 from .deprecate import deprecated
 from .interesting_periods import PERIODS
 from .txn import get_turnover
 from .utils import APPROX_BDAYS_PER_MONTH, APPROX_BDAYS_PER_YEAR
 from .utils import DAILY
-from . import _
+import gettext
+_=languagesUtils.zh_install()
 
 DEPRECATION_WARNING = ("Risk functions in pyfolio.timeseries are deprecated "
                        "and will be removed in a future release. Please "

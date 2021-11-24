@@ -1,3 +1,4 @@
 include versioneer.py
 include pyfolio/_version.py
-include LICENSE
+include pyfolio/data/locale/zh_CN/LC_MESSAGES/zh_CN.mo
+include pyfolio/data/locale/zh_CN/LC_MESSAGES/zh_CN.po

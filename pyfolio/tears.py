@@ -23,7 +23,7 @@ import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from . import _seaborn as sns
+from . import _seaborn as sns, languagesUtils
 from . import capacity
 from . import perf_attrib
 from . import plotting
@@ -32,6 +32,8 @@ from . import round_trips
 from . import timeseries
 from . import txn
 from . import utils
+import gettext
+_=languagesUtils.zh_install()
 
 FACTOR_PARTITIONS = {
     'style': ['momentum', 'size', 'value', 'reversal_short_term',

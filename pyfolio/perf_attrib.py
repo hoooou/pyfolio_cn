@@ -20,13 +20,15 @@ import empyrical as ep
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from . import languagesUtils
 from .pos import get_percent_alloc
 from .txn import get_turnover
 from .utils import print_table, configure_legend
 
 PERF_ATTRIB_TURNOVER_THRESHOLD = 0.25
 
-
+import gettext
+_=languagesUtils.zh_install()
 def perf_attrib(returns,
                 positions,
                 factor_returns,

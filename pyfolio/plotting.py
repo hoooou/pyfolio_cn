@@ -29,8 +29,9 @@ import scipy as sp
 from matplotlib import figure
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.ticker import FuncFormatter
+from . import languagesUtils
 
-from . import _seaborn as sns, _
+from . import _seaborn as sns
 from . import capacity
 from . import pos
 from . import timeseries
@@ -39,6 +40,7 @@ from . import utils
 from .utils import (APPROX_BDAYS_PER_MONTH,
                     MM_DISPLAY_UNIT)
 
+_ = languagesUtils.zh_install()
 
 def customize(func):
     """
@@ -592,6 +594,7 @@ def show_perf_stats(returns, factor_returns=None, positions=None,
 
     date_rows = OrderedDict()
     if len(returns.index) > 0:
+        _ = languagesUtils.zh_install()
         date_rows[_('Start date')] = returns.index[0].strftime('%Y-%m-%d')
         date_rows[_('End date')] = returns.index[-1].strftime('%Y-%m-%d')
 
