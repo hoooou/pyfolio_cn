@@ -1,8 +1,9 @@
 ![pyfolio](https://media.quantopian.com/logos/open_source/pyfolio-logo-03.png "pyfolio")
-
 # pyfolio 中文版
 ![simple tear cn_0](https://github.com/hoooou/pyfolio_cn/blob/master/WX20211124-171212%402x.png "Example tear sheet created from a Zipline algo")
 ![simple tear cn_1](https://github.com/hoooou/pyfolio_cn/blob/master/WX20211124-171232%402x.png "Example tear sheet created from a Zipline algo")
+
+# pyfolio
 
 [![Join the chat at https://gitter.im/quantopian/pyfolio](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/quantopian/pyfolio?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![build status](https://travis-ci.org/quantopian/pyfolio.png?branch=master)](https://travis-ci.org/quantopian/pyfolio)
